@@ -3,7 +3,7 @@ var cols = 100;
 
 var playing = false;
 
-var grid = new Array(cols);
+var grid = new Array(rows);
 var nextGrid = new Array(rows);
 
 var timer;
