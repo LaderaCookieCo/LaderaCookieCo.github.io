@@ -144,6 +144,7 @@ function clearButtonHandler() {
         cells[i].setAttribute("class", "dead");
     }
     resetGrids;
+	window.reload();
 }
 
 // start/pause/continue the game
