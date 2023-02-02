@@ -14,9 +14,9 @@ table {
 
 td {
     border: 1px solid #161616;
-    border-radius: 3px;
+    border-radius: 0px;
     width: 10px;
-    height: 10px;
+    height: 12px;
 }
 
 span {
@@ -40,5 +40,5 @@ td.dead {
 
 td.live {
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 0px;
 }
