@@ -12,6 +12,10 @@ table {
     border-spacing: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 td {
     border: 1px solid #161616;
     border-radius: 0px;

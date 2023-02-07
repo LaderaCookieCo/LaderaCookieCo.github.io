@@ -1,5 +1,5 @@
-var rows = 50;
-var cols = 100;
+var rows = 500;
+var cols = 500;
 
 var playing = false;
 
@@ -8,6 +8,29 @@ var nextGrid = new Array(rows);
 
 var timer;
 var reproductionTime = 100;
+
+var scrollY = 0;
+var scrollX = 0;
+
+window.addEventListener("keydown", function(e){
+    var code = e.keyCode;
+    if(code === 87) { // W
+       scrollY += 20;
+       window.scrollTo(0, scrollY);
+    }
+    if(code === 83) { // S
+       scrollY -= 20;
+       window.scrollTo(0, scrollY);
+    }
+    if(code === 65) { // A
+        scrollX -= 20;
+        window.scrollTo(scrollX, scrollY);
+     }
+     if(code === 68) { // D
+        scrollX += 20;
+        window.scrollTo(scrollX, scrollY);
+     }
+});
 
 function initializeGrids() {
     for (var i = 0; i < rows; i++) {
