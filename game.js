@@ -10,7 +10,7 @@ var timer;
 var reproductionTime = 100;
 
 var scrollY = 0;
-var scrollX = 0;
+var scrollX = 10;
 
 window.addEventListener("keydown", function(e){
     var code = e.keyCode;
