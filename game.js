@@ -16,11 +16,11 @@ window.addEventListener("keydown", function(e){
     var code = e.keyCode;
     if(code === 87) { // W
        scrollY += 20;
-       window.scrollTo(0, scrollY);
+       window.scrollTo(scrollX, scrollY);
     }
     if(code === 83) { // S
        scrollY -= 20;
-       window.scrollTo(0, scrollY);
+       window.scrollTo(scrollX, scrollY);
     }
     if(code === 65) { // A
         scrollX -= 20;
