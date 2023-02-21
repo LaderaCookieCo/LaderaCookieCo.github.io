@@ -27,3 +27,12 @@ body {
     border-top-style: ridge;
     border-color: #fa5eeb;
   }
+
+  #infoarea{
+    background-color: #ff53e2;
+    border-radius: 1cm;
+    padding: 1cm;
+    border-bottom-style: ridge;
+    border-top-style: ridge;
+    border-color: #fb3ee8;
+  }
