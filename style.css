@@ -3,7 +3,7 @@ body {
     font-size: 15px;
     line-height: 1.5;
     color: #000000;
-    background-color: #9ec8ff;
+    background-color: #8e8e8e;
     margin: 1cm;
     padding-left: 2cm;
     padding-right: 2cm;
@@ -20,8 +20,8 @@ body {
   }
   
   #main-content {
-    background-color: #ff76e8;
-    border-radius: 1cm;
+    background-color: #d4d4d4;
+    border-radius: 0.5cm;
     padding: 1cm;
     border-bottom-style: ridge;
     border-top-style: ridge;
@@ -29,17 +29,17 @@ body {
   }
 
   #infoarea {
-    background-color: #ff9eef;
-    border-radius: 1cm;
+    background-color: #ffffff;
+    border-radius: 0.5cm;
     padding: 1cm;
     border-bottom-style: ridge;
     border-top-style: ridge;
-    border-color: #fb3ee8;
+    border-color: #cdcdcd;
     margin-top: 1cm;
   }
 
   a:link, a:visited {
-    background-color: #36c5f4;
+    background-color: #61d5fc;
     color: white;
     padding: 0.2cm;
     text-align: center;
@@ -49,5 +49,5 @@ body {
   }
   
   a:hover, a:active {
-    background-color: rgb(0, 229, 255);
+    background-color: rgb(0, 255, 140);
   }
