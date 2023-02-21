@@ -3,7 +3,7 @@ body {
     font-size: 30px;
     line-height: 1.5;
     color: #000000;
-    background-color: #f474df;
+    background-color: #ff9eef;
     margin: 1cm;
     padding-left: 2cm;
     padding-right: 2cm;
@@ -20,7 +20,7 @@ body {
   }
   
   #main-content{
-    background-color: #ff9eef;
+    background-color: #ff76e8;
     border-radius: 1cm;
     padding: 1cm;
     border-bottom-style: ridge;
