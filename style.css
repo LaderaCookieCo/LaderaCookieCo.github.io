@@ -40,10 +40,11 @@ body {
   a:link, a:visited {
     background-color: #5ff436;
     color: white;
-    padding: 14px 25px;
+    padding: 1cm;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    border-radius: 0.5cm;
   }
   
   a:hover, a:active {
