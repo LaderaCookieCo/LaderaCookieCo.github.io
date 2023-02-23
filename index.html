@@ -52,9 +52,166 @@
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <h1 class="w3-jumbo"><span class="w3-hide-small">This is</span> Ladera Cookie Co.</h1>
-    <p><h2><a href="https://docs.google.com/forms/d/1LbCigiPUlK6iCAhGJjBQqRKDzzvkL5pN4X792POMw10"></h2><h6>Submit Orders Here</h6></a></p>
-    <img src="cookie.png" alt="cookie" class="w3-image" width="auto" height="1108">
   </header>
+  <div id="text">
+    <div class="line">
+    <a 
+       id="channel-link" 
+       href="DOC HERE" 
+       target="_blank" 
+       class="word fancy"
+    >
+      <span>Order </span> 
+      <span>Here</span>
+    </a>
+  </div>
+  <style>
+    @keyframes float {
+  from, to {
+    transform: translateY(-0%);
+  }
+  
+  50% {    
+    transform: translateY(-3%);
+  }
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 1000% center;
+  }
+  
+  to {
+    background-position: 0% center;
+  }
+}
+
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.word {
+  color: white;
+  font-size: clamp(2rem, 8vw, 10rem);
+  font-family: "Rubik", sans-serif;
+  margin: 0rem;
+  transition: opacity 250ms ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+#text:has(.fancy:hover) .word:not(.fancy:hover) {
+  opacity: 0.2;
+}
+
+.fancy span {
+  display: inline-block;
+}
+
+.fancy > .outer {
+  transition: transform 350ms ease;
+}
+
+.fancy:hover > .outer {
+  transition-duration: 800ms;
+}
+
+.fancy:hover > .outer > .inner {
+  animation: float 5s ease infinite;
+}
+
+
+.fancy:hover > .outer:nth-child(1) {
+  transform: translate(-80%, 60%) rotate(8deg);
+}
+
+.fancy:hover > .outer:nth-child(2) {
+  transform: translate(-40%, 20%) rotate(4deg);
+}
+
+.fancy:hover > .outer:nth-child(3) {
+  transform: translate(-10%, 60%) rotate(-6deg);
+}
+
+.fancy:hover > .outer:nth-child(4) {
+  transform: translate(0%, 8%) rotate(-8deg);
+}
+
+.fancy:hover > .outer:nth-child(5) {
+  transform: translate(0%, -20%) rotate(5deg);
+}
+
+.fancy:hover > .outer:nth-child(6) {
+  transform: translate(0%, 20%) rotate(-3deg);
+}
+
+.fancy:hover > .outer:nth-child(7) {
+  transform: translate(0%, -40%) rotate(-5deg);
+}
+
+.fancy:hover > .outer:nth-child(8) {
+  transform: translate(0%, 15%) rotate(10deg);
+}
+
+.fancy:hover > .outer:nth-child(9) {
+  transform: translate(0%, -50%) rotate(8deg);
+}
+
+.fancy:hover > .outer:nth-child(10) {
+  transform: translate(0%, 15%) rotate(-6deg);
+}
+
+.fancy:hover > .outer:nth-child(11) {
+  transform: translate(50%, -10%) rotate(-3deg);
+}
+
+.fancy:hover > .outer:nth-child(12) {
+  transform: translate(120%, -30%) rotate(-10deg);
+}
+  </style>
+  <script>
+    const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+const enhance = id => {
+  const element = document.getElementById(id),
+        text = element.innerText.split("");
+  
+  element.innerText = "";
+  
+  text.forEach((value, index) => {
+    const outer = document.createElement("span");
+    
+    outer.className = "outer";
+    
+    const inner = document.createElement("span");
+    
+    inner.className = "inner";
+    
+    inner.style.animationDelay = `${rand(-5000, 0)}ms`;
+    
+    const letter = document.createElement("span");
+    
+    letter.className = "letter";
+    
+    letter.innerText = value;
+    
+    letter.style.animationDelay = `${index * 1000 }ms`;
+    
+    inner.appendChild(letter);    
+    
+    outer.appendChild(inner);    
+    
+    element.appendChild(outer);
+  });
+}
+
+enhance("channel-link");
+  </script>
 
 
   
