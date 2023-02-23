@@ -60,34 +60,27 @@
   
   <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">Extras</h2>
-    <hr style="width:200px" class="w3-opacity">
 
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
         <div id="about">
           <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-            <img class="image" src="https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" />
-            <img class="image" src="https://images.unsplash.com/photo-1610194352361-4c81a6a8967e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80" draggable="false" />
-            <img class="image" src="https://images.unsplash.com/photo-1618202133208-2907bebba9e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" />
+            <img class="image" src="me.jpeg" draggable="false" />
+            <span style="position:left; padding-bottom: 20px;">I'm the founder and president, David, and I recently started a business baking homemade cookies. It was far from an easy process, but I was determined to make it a success. With my attention to detail and passion for baking, I ensure that each batch is made with to high standards that I set. My dedication and hard work has paid off, and my business is becoming increasingly successful. I'm excited for the future and look forward to creating even more delicious treats for everyone in Ladera Ranch.</span>
+            <img class="image" src="ethan.jpeg" draggable="false" />
+            <span style="position:left; padding-bottom: 20px;">I'm the vice president, Ethan, and I recently started helping my friend with his business baking homemade cookies. I helped create new recipes to sell, and I am interested in growing the company. Me, along with David and Dane, will bake cookies for all of Ladera to enjoy.</span>
+            <img class="image" src="dane.jpeg" draggable="false" />
+            <span style="position:left; padding-bottom: 20px;">I'm Dane, the delivery coordinator, and I make sure that anyone who orders gets their cookies fresh and on time. With my help, we also create new flavors to add to our ever-expanding catalog of cookies. Me, along with David and Ethan, will create some of the best cookies for everyone in Ladera.</span>
           </div>
         </div>
       </div>
       <style>
-        body {
-  height: 100vh;
-  width: 100vw;
-  background-color: black;
-  margin: 0rem;
-  overflow: hidden;
-}
-
 #image-track {
-  display: flex;
+  display: inline-flex;
   gap: 4vmin;
-  position: bottom;
   left: 50%;
+  padding-top: 75%;
   top: 50%;
   transform: translate(0%, -50%); 
   user-select: none; /* -- Prevent image highlighting -- */
@@ -100,58 +93,7 @@
   object-position: 100% center;
 }
 
-/* -- YouTube Link Styles -- */
 
-body.menu-toggled > .meta-link > span {
-  color: rgb(30, 30, 30);
-}
-
-#source-link {
-  bottom: 60px;
-}
-
-#source-link > i {
-  color: rgb(94, 106, 210);
-}
-
-#yt-link > i {
-  color: rgb(239, 83, 80);
-}
-
-.meta-link {
-  align-items: center;
-  backdrop-filter: blur(3px);
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
-  bottom: 10px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-  cursor: pointer;  
-  display: inline-flex;
-  gap: 5px;
-  left: 10px;
-  padding: 10px 20px;
-  position: fixed;
-  text-decoration: none;
-  transition: background-color 400ms, border-color 400ms;
-  z-index: 10000;
-}
-
-.meta-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.meta-link > i, .meta-link > span {
-  height: 20px;
-  line-height: 20px;
-}
-
-.meta-link > span {
-  color: white;
-  font-family: "Rubik", sans-serif;
-  font-weight: 500;
-}
       </style>
       <script>
         const track = document.getElementById("image-track");
@@ -221,6 +163,3 @@ window.ontouchmove = e => handleOnMove(e.touches[0]);
 
 </body>
 </html>
-<div style="float:left"><span style="position:left; padding-bottom: 20px;">I'm the founder and president, David, and I recently started a business baking homemade cookies. It was far from an easy process, but I was determined to make it a success. With my attention to detail and passion for baking, I ensure that each batch is made with to high standards that I set. My dedication and hard work has paid off, and my business is becoming increasingly successful. I'm excited for the future and look forward to creating even more delicious treats for everyone in Ladera Ranch.</span></div>
-          <div style="float:left"><hr><span style="position:left; padding-bottom: 20px;">I'm the vice president, Ethan, and I recently started helping my friend with his business baking homemade cookies. I helped create new recipes to sell, and I am interested in growing the company. Me, along with David and Dane, will bake cookies for all of Ladera to enjoy.</span></div>
-          <div style="float:left"><hr><span style="position:left; padding-bottom: 20px;">I'm Dane, the delivery coordinator, and I make sure that anyone who orders gets their cookies fresh and on time. With my help, we also create new flavors to add to our ever-expanding catalog of cookies. Me, along with David and Ethan, will create some of the best cookies for everyone in Ladera.</span></div>
