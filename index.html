@@ -155,14 +155,63 @@ window.onmousemove = e => handleOnMove(e);
 window.ontouchmove = e => handleOnMove(e.touches[0]);
       </script>
       <div class="w3-half">
-        <img src="" style="width:100%">
-        <img src="" style="width:100%">
-        <img src="" style="width:100%">
-        <img src="" style="width:100%">
+        <div id="cookietypes">
+          <div id="type1"><span id="cookietext">Chocolate Chunk</span></div>
+          <div id="type2"><span id="cookietext">Snickerdoodle</span></div>
+          <div id="type3"><span id="cookietext">Classic Sugar</span></div>
+        </div>
       </div>
     <!-- End photo grid -->
     </div>
-    
+    <style>
+      #cookietypes {
+        display: flex;
+        width: 100%;
+        gap: 10vw;
+        justify-content: center;
+        color: black;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      #type1 {
+        width: 30vw;
+        height:3in;
+        background-color: white;
+        margin-top: -10cm;
+        border-radius: 0.5cm;
+        position: static;
+        border-style: solid;
+        border-color: grey;
+      }
+
+      #type2 {
+        width: 30vw;
+        height: 3in;
+        background-color: white;
+        margin-top: -10cm;
+        border-radius: 0.5cm;
+        position: static;
+        border-style: solid;
+        border-color: grey;
+      }
+
+      #type3 {
+        width: 30vw;
+        height: 3in;
+        background-color: white;
+        margin-top: -10cm;
+        border-radius: 0.5cm;
+        position: static;
+        border-style: solid;
+        border-color: grey;
+      }
+
+      #cookietext {
+        font-size: large;
+        margin-top: 0.5cm;
+      }
+    </style>
  
 
     </div>
