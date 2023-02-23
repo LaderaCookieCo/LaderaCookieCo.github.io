@@ -9,10 +9,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gloock">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Gloock", sans-serif}
     .w3-row-padding img {margin-bottom: 12px}
     /* Set the width of the sidebar to 120px */
     .w3-sidebar {width: 120px;background: #222;}
@@ -42,8 +42,8 @@
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">Home</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">About</a>
   </div>
 </div>
 
@@ -54,166 +54,30 @@
     <h1 class="w3-jumbo"><span class="w3-hide-small">This is</span> Ladera Cookie Co.</h1>
   </header>
   <div id="text">
-    <div class="line">
+    <div style="text-align: center; font-size: x-large;">
       <a 
-       id="channel-link" 
+       id="dlink" 
        href="https://docs.google.com/forms/d/1LbCigiPUlK6iCAhGJjBQqRKDzzvkL5pN4X792POMw10" 
        target="_blank" 
        class="word fancy"
       >
-        Order Here
+        Order Here
       </a>
     </div>
   </div>
   <style>
-    @keyframes float {
-  from, to {
-    transform: translateY(-0%);
-  }
-  
-  50% {    
-    transform: translateY(-3%);
-  }
-}
-
-@keyframes background-pan {
-  from {
-    background-position: 1000% center;
-  }
-  
-  to {
-    background-position: 0% center;
-  }
-}
-
-
-.line {
-  display: flex;
-  justify-content: space-between;
-  justify-content: center;
-}
-
-.word {
-  color: white;
-  font-size: 30px;
-  font-family: "Rubik", sans-serif;
-  margin: 0rem;
-  transition: opacity 250ms ease;
-}
-
-a {
-  text-decoration: none;
-}
-
-#text:has(.fancy:hover) .word:not(.fancy:hover) {
-  opacity: 0.2;
-}
-
-.fancy span {
-  display: inline-block;
-}
-
-.fancy > .outer {
-  transition: transform 350ms ease;
-}
-
-.fancy:hover > .outer {
-  transition-duration: 800ms;
-}
-
-.fancy:hover > .outer > .inner {
-  animation: float 5s ease infinite;
-}
-
-
-.fancy:hover > .outer:nth-child(1) {
-  transform: translate(-80%, 60%) rotate(8deg);
-}
-
-.fancy:hover > .outer:nth-child(2) {
-  transform: translate(-40%, 20%) rotate(4deg);
-}
-
-.fancy:hover > .outer:nth-child(3) {
-  transform: translate(-10%, 60%) rotate(-6deg);
-}
-
-.fancy:hover > .outer:nth-child(4) {
-  transform: translate(0%, 8%) rotate(-8deg);
-}
-
-.fancy:hover > .outer:nth-child(5) {
-  transform: translate(0%, -20%) rotate(5deg);
-}
-
-.fancy:hover > .outer:nth-child(6) {
-  transform: translate(0%, 20%) rotate(-3deg);
-}
-
-.fancy:hover > .outer:nth-child(7) {
-  transform: translate(0%, -40%) rotate(-5deg);
-}
-
-.fancy:hover > .outer:nth-child(8) {
-  transform: translate(0%, 15%) rotate(10deg);
-}
-
-.fancy:hover > .outer:nth-child(9) {
-  transform: translate(0%, -50%) rotate(8deg);
-}
-
-.fancy:hover > .outer:nth-child(10) {
-  transform: translate(0%, 15%) rotate(-6deg);
-}
-
-.fancy:hover > .outer:nth-child(11) {
-  transform: translate(50%, -10%) rotate(-3deg);
-}
-
-.fancy:hover > .outer:nth-child(12) {
-  transform: translate(120%, -30%) rotate(-10deg);
-}
+    #dlink:link, #dlink:visited {
+      text-decoration: none;
+      display: block;
+      background-color: #222;
+      color: white;
+      margin-left: 2in;
+      margin-right: 2in;
+      border-radius: 0.5cm;
+      border-style: solid;
+      border-color: grey;
+    }
   </style>
-  <script>
-    const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-
-const enhance = id => {
-  const element = document.getElementById(id),
-        text = element.innerText.split("");
-  
-  element.innerText = "";
-  
-  text.forEach((value, index) => {
-    const outer = document.createElement("span");
-    
-    outer.className = "outer";
-    
-    const inner = document.createElement("span");
-    
-    inner.className = "inner";
-    
-    inner.style.animationDelay = `${rand(-5000, 0)}ms`;
-    
-    const letter = document.createElement("span");
-    
-    letter.className = "letter";
-    
-    letter.innerText = value;
-    
-    letter.style.animationDelay = `${index * 1000 }ms`;
-    
-    inner.appendChild(letter);    
-    
-    outer.appendChild(inner);    
-    
-    element.appendChild(outer);
-  });
-}
-
-enhance("channel-link");
-  </script>
-
-
   
   <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="photos">
